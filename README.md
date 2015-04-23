@@ -39,7 +39,7 @@ add shared folders: if you want to add `/var/www` and `/var/log/nginx` attached 
 docker run -it --rm --name my-app -v ~/www:/var/www -v ~/nginx_logs:/var/log/nginx flaprimo/hhvm
 ```
 
-change default port: if you want to change the default port for example 80->9000
+change default port: if you want to change the default port for example 80->9000.
 
 ```sh
 docker run -it --rm --name my-app -p 9000:80 flaprimo/hhvm
@@ -58,9 +58,9 @@ Simply put your web application in `/var/www`.
 ## References
 
 References that I've used to build the docker file
-- http://webdevstudios.com/2014/07/17/setting-up-wordpress-nginx-hhvm-for-the-fastest-possible-load-times
-- https://github.com/facebook/hhvm/wiki/Getting-Started
-- http://docs.docker.com/articles/dockerfile_best-practices
+* http://webdevstudios.com/2014/07/17/setting-up-wordpress-nginx-hhvm-for-the-fastest-possible-load-times
+* https://github.com/facebook/hhvm/wiki/Getting-Started
+* http://docs.docker.com/articles/dockerfile_best-practices
 
 ## License
 

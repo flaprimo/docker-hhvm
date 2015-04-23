@@ -33,11 +33,14 @@ docker run -it --rm --name my-app flaprimo/hhvm
 ```
 
 ### Examples
-add shared folders: if you want to add /var/www and /var/log/nginx attached respectively to ~/www and ~/nginx_logs
+add shared folders: if you want to add `/var/www` and `/var/log/nginx` attached respectively to `~/www` and `~/nginx_logs`.
+
 ```sh
 docker run -it --rm --name my-app -v ~/www:/var/www -v ~/nginx_logs:/var/log/nginx flaprimo/hhvm
 ```
+
 change default port: if you want to change the default port for example 80->9000
+
 ```sh
 docker run -it --rm --name my-app -p 9000:80 flaprimo/hhvm
 ```
@@ -47,6 +50,10 @@ docker run -it --rm --name my-app -p 9000:80 flaprimo/hhvm
 ```sh
 docker exec -i -t my-app bash
 ```
+
+## Usage
+
+Simply put your web application in `/var/www`.
 
 ## References
 

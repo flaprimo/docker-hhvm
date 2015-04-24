@@ -14,7 +14,7 @@ This Docker container uses:
 
 ## Installation
 
-Be sure to have [Docker](https://docs.docker.com/installation/) installed. Then choose a way go get and run the container.
+Be sure to have [Docker](https://docs.docker.com/installation/) installed. Then choose a way to get and run the container.
 
 ### Build & Run
 

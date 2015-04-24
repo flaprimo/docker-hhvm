@@ -35,7 +35,7 @@ RUN chown -R www-data:www-data /var/www/
 
 ## CLEANUP & DOCKER CONFIGURATION
 # Clean up APT when done.
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/www/*
 
 # Define mountable directories.
 VOLUME ["/var/www/","/var/log/nginx/"]
